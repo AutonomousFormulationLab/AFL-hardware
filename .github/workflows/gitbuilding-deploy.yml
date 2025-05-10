@@ -28,10 +28,10 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.7'
+          python-version: '3.10'
 
       - name: Install gitbuilding
-        run: pip install gitbuilding
+        run: pip install gitbuilding 'marshmallow<4'
         working-directory: LoaderV2Docs
 
       - name: Build HTML docs
